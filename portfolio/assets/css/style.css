@@ -30,6 +30,7 @@ header a {
 header nav {
     margin: 15px 0;
     width: 50%;
+    font-size: 24px;
 }
 header nav ul {
     display: flex;
@@ -61,9 +62,14 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 24px;
-    
+    padding: 0px 35px;
+}
+
+footer h2 {
+
 }
 footer a {
     text-decoration: none;
     color: #f0f0f0f6;
+    padding: 0px 35px;
 }
