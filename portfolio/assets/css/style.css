@@ -44,6 +44,33 @@ header nav ul li a{
     margin: 0 30px;
     font-weight: lighter;
 }
+/*Image for attention*/
+.attention {
+    background-image:url("../images/desks.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0f6;
+    height: 25vh;      
+}
+.attention h2 {
+    padding: 0px 35px;
+    position: absolute;
+    
+}
+
+/*Work Grid*/
+.work-grid-container {
+    display:inline-grid;
+}
+
+.work-grid-item {
+    width: 200px;
+    height: 50 px;
+    background-color: #0d0236;
+    border: solid;
+    color: #f0f0f0f6;
+}
+
 /*Set resume as viewable PDF*/
 iframe {
     background: ivory;
