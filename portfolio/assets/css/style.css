@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100%;
+    height: 100vh;
 }
 header {
     display: flex;
@@ -44,6 +44,24 @@ header nav ul li a{
     margin: 0 30px;
     font-weight: lighter;
 }
+/*section format*/
+article {
+    width: 50%;
+}
+.section-title {
+    font-size: 55px;
+    padding: 20px;
+    text-align: right;
+    border-right: 3px solid;
+    margin: 5px auto;
+    color: #0d0236;
+    width: 50%;
+}
+.secondary-border {
+    border-color: #0d0236;
+
+}
+
 /*Image for attention*/
 .attention {
     background-image:url("../images/desks.jpg");
@@ -59,16 +77,44 @@ header nav ul li a{
 }
 
 /*Work Grid*/
-.work-grid-container {
-    display:inline-grid;
+.work {
+    background: #0d0236;
 }
 
-.work-grid-item {
-    width: 200px;
-    height: 50 px;
+.work-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.work-grid-container {
+    display:grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-flow: column;
+    font-size: 18px;
+    
+}
+
+.work-grid-item-one {
+    grid-column: 1/2;
+    grid-row: 1/3;
     background-color: #0d0236;
     border: solid;
     color: #f0f0f0f6;
+    padding: 10em;
+    
+}
+.work-grid-item {
+    background-color: #0d0236;
+    border: solid;
+    display: flex;
+    color: #f0f0f0f6;
+    padding: 5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /*Set resume as viewable PDF*/
@@ -92,8 +138,15 @@ footer {
     padding: 0px 35px;
 }
 
-footer h2 {
 
+.footer-title {
+    font-size: 55px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid;
+    margin: 0 auto 35px auto;
+    color: #f0f0f0f6;
+    width: 50%;
 }
 footer a {
     text-decoration: none;
