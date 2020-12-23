@@ -4,66 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jared Davis--Developer</title>
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 <body>
 <!--Heading for Site-->
     <header>
-        <h1>JARED DAVIS</h1>
-         <nav>
-            <ul>
-                <li>
-                    <a href= "#about-me">About Me</a>
-                                    </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="resume.html">Resume</a>
-                </li>
-            </ul>
+        <nav>
+            <div class="nav-wrapper blue darken-4">
+                <a href="#" class="brand-logo center">JARED DAVIS</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href= "#about-me">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </div>    
          </nav>
-        </header>
+    </header>
     <!--Image and subtitle for attention-->
     <section class="attention">
-        <h2>Solutions Offered Here</h2>
+        <h2 class="right-align">Solutions Offered Here</h2>
     </section>
     <!--About Me-->
-    <section id="about-me">
+    <section id="about-me" class="row">
         <article>
-            <h2 class="section-title secondary-border">About Me</h2>
-            <div class="container">
-                <p>
-                Jared Davis is an educator of over 11 years with experience in K-12 learning platforms, positive behavior design, and student information systems. 
-                </p>
+            <h2 class="section-title col s3">About Me</h2>
+            <div class="container ">
+                <blockquote id="educator" class="blue-border col s3 scale-transition">
+                Educator--over 11 years of experience in teaching, leading, and behavior modification in public, private, and charter systems. 
+                </blockquote>
+                <blockquote id="developer" class="blue-border col s3">
+                Web Developer--HTML, CSS, Bootstrap, Materialize, Node, Jest
+                </blockquote>
+                <blockquote id="cyclist" class="blue-border col s3">
+                Cycling Advocate--SORBA Jax Board Member, Trail Boss, Youth Rider Development
+                </blockquote>
             </div>
         </article>
     </section>
     <!--Work-->
-    <section id="work" class="mockups">
+    <section id="work" class="mockups row">
         <article>
-            <h2 class="section-title secondary-border">Work</h2>
-        </article>
-        <div class="work-grid-wrapper">
-            <div class="work-grid-container">
-                <div class="work-grid-item-one">
-                    <a href="https://michaeldevelopscode.github.io/plan-your-date-night/">Plan Your Date Night</a>
-                </div>
-                <div class="work-grid-item">
-                    <a href="https://github.com/jadavis30/weather">Weather Dashboard</a>
-                </div>
-                <div class="work-grid-item">
-                    <a href="https://jadavis30.github.io/workdayscheduler/">Work Day Scheduler</a>
+            <h2 class="section-title col s3">Work</h2>
+            <div class="work-grid-wrapper">
+                <div class="work-grid-container">
+                    <div class="work-grid-item-one blue darken-4 hoverable">
+                        <a class="waves-effect waves-light" href="https://jadavis30.github.io/plan-your-date-night/">Plan Your Date Night</a>
+                    </div>
+                    <div class="work-grid-item blue darken-4 hoverable">
+                        <a href="https://github.com/jadavis30/weather">Weather Dashboard</a>
+                    </div>
+                    <div class="work-grid-item blue darken-4 hoverable">
+                        <a href="https://jadavis30.github.io/workdayscheduler/">Work Day Scheduler</a>
+                    </div>
+                    <div class="work-grid-item blue darken-4 hoverable">
+                        <a href="https://jadavis30.github.io/professional-read-me/">ReadMe Generator</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
     <!--Contact Info in Footer-->
-    <footer id="contact-me">
+    <footer id="contact-me" class="blue darken-4">
         <h2 class="footer-title secondary-border">Get in Touch</h2>
         <div>
             <a href="tel:904.343.4451">904.343.4451</a>
@@ -72,5 +75,10 @@
             <a href="www.twitter.com/jaredhdavis32">Twitter</a>
         </div>
     </footer> 
+    <script>
+        //Materialize scale transition on About Me blockquotes
+        $("#educator").addClass("scale-in")
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
