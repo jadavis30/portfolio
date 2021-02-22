@@ -4,77 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jared Davis--Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-<!--Heading for Site-->
-    <header>
-        <nav>
-            <div class="nav-wrapper blue darken-4">
-                <a href="#" class="brand-logo center">JARED DAVIS</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href= "#about-me">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                    <li><a href="resume.html">Resume</a></li>
+<!--Navbar for Site-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a href="#" class="navbar-brand">JARED DAVIS</a>
+
+            <!--Toggle/Collapse-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--Links--> 
+            <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href= "#about-me">About Me</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#contact-me">Contact Me</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="resume.html">Resume</a></li>
                 </ul>
             </div>    
          </nav>
-    </header>
     <!--Image and subtitle for attention-->
-    <section class="attention">
+    <section class="jumbotron text-center">
         <h2 class="right-align text-white">Lead. Develop. Change.</h2>
     </section>
     <!--About Me-->
-    <section id="about-me" class="row">
-        <article>
-            <h2 class="section-title col s3">About Me</h2>
-            <div class="container ">
+    <section id="about-me" class="container p-3 my-3 bg-dark text-white">
+        <div class="row">
+            <div class="col-sm-4">
                 <blockquote id="educator" class="blue-border col s3 scale-transition">
-                Educator--over 11 years of experience in teaching, leading, and behavior modification in public, private, and charter systems. 
-                </blockquote>
-                <blockquote id="developer" class="blue-border col s3">
-                Web Developer--Proficient in HTML, CSS, Bootstrap, Materialize, Node, Jest
-                </blockquote>
-                <blockquote id="cyclist" class="blue-border col s3">
-                Cycling Advocate--SORBA Jax Board Member, Trail Boss, Youth Rider Development
+                    <h3>Educator</h3>
+                Over 11 years of experience in teaching, leading, and behavior modification in public, private, and charter systems. 
                 </blockquote>
             </div>
-        </article>
+            <div class="col-sm-4">    
+                <blockquote id="developer" class="blue-border col s3">
+                    <h3>Full Stack Developer</h3>
+                HTML, CSS, JavaScript, Node.js, MySQL2, MVC Paradigm
+                </blockquote>
+            </div>
+            <div class="col-sm-4">    
+                <blockquote id="cyclist" class="blue-border col s3">
+                    <h3>Cycling Advocate</h3>
+                SORBA Jax Board Member, Trail Boss, Youth Rider Development
+                </blockquote>
+            </div>
+        </div>    
     </section>
     <!--Work-->
-    <section id="work" class="mockups row">
-        <article>
-            <div class="work-grid-wrapper">
-                <div class="work-grid-container">
-                    <h2 class="section-title center-align">Work</h2>
-                    <div class="work-grid-item-one blue darken-4 hoverable">
-                        <img src="/assets/images/PYDNbckimg.jpg">
-                        <a class="" href="https://jadavis30.github.io/plan-your-date-night/">Plan Your Date Night</a>
-                    </div>
-                    <div class="work-grid-item blue darken-4 hoverable">
-                        <a href="https://jadavis30.github.io/weather/">Weather Dashboard</a>
-                    </div>
-                    <div class="work-grid-item blue darken-4 hoverable">
-                        <a href="https://ucf-photo-hut.herokuapp.com/">PhotoHut</a>
-                    </div>
-                    <div class="work-grid-item blue darken-4 hoverable">
-                        <a href="https://github.com/jadavis30/professional-read-me">ReadMe Generator</a>
-                    </div>
+    <section id="work" class="container p-3 my-3 bg-dark text-white">
+        <div class="row">
+        <h2 class="col">Work</h2>
+        </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="" href="https://jadavis30.github.io/plan-your-date-night/">Plan Your Date Night</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://jadavis30.github.io/weather/">Weather Dashboard</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://ucf-photo-hut.herokuapp.com/">PhotoHut</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://github.com/jadavis30/professional-read-me">ReadMe Generator</a>
                 </div>
             </div>
-        </article>
     </section>
     <!--Contact Info in Footer-->
-    <footer id="contact-me" class="page-footer blue darken-4">
+    <footer id="contact-me" class="page-footer bg-dark text-white">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h2 class="white-text">Get in Touch</h5>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <ul>
+                    <ul class="navbar-nav">
                         <li><a class="white-text" href="tel:904.343.4451">Call Me</a></li>
                         <li><a class="white-text" href="mailto:jared.davis21@yahoo.com">E-mail Me</a></li>
                         <li><a class="white-text" href="https://github.com/jadavis30">GitHub</a></li>
@@ -84,10 +91,8 @@
             </div>            
         </div>
     </footer> 
-    <script>
-        //Materialize scale transition on About Me blockquotes
-        $("#educator").addClass("scale-in")
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
